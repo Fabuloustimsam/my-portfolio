@@ -67,7 +67,7 @@ useEffect(() => {
   return (
     <>
       <Head>
-        <title>Fabule Kore | Software Developer</title>
+        <title>Fabule Kore | Frontend Developer</title>
         <meta name="description" content="Software Developer from Lagos, Nigeria" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
