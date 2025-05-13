@@ -4,39 +4,39 @@ import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope, FaFileDownload } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope, FaFileDownload, FaMailBulk } from 'react-icons/fa';
 
 // Replace with your information
 const personalInfo = {
-  name: "Your Name",
-  title: "Your Title / Role",
-  tagline: "Your professional tagline goes here",
-  description: "I'm a passionate [your profession] with [X years] of experience specializing in [your specialty]. I combine creativity and technical expertise to deliver exceptional results for my clients and teams.",
-  photo: "/profile-photo.jpg",
-  skills: ["JavaScript", "React", "Next.js", "Tailwind CSS", "UI/UX Design", "Node.js", "Git"],
-  interests: ["Photography", "Hiking", "Reading", "Playing Guitar", "Travel"],
+  name: "Fabule Samuel Akorede",
+  title: "Frontend Developer",
+  tagline: "Translating Design ideas into Functional Code.",
+  description: "I'm a passionate Frontend Developer with 2 years of experience specializing in Frontend Development. I combine creativity and technical expertise to deliver exceptional results for my clients and teams.",
+  photo: "/bortimagereal.png",
+  skills: ["JavaScript", "React", "Next.js", "Tailwind CSS", "Typescript", "Node.js", "Git"],
+  interests: ["Video editing", "Hiking",  "Football", "Reading", "Playing Guitar", "Travel"],
   social: {
-    linkedin: "https://linkedin.com/in/yourprofile",
-    github: "https://github.com/yourusername",
-    twitter: "https://twitter.com/yourhandle",
-    email: "your.email@example.com"
+    linkedin: "https://www.linkedin.com/in/fabuloustimsam/",
+    github: "https://github.com/Fabuloustimsam",
+    twitter: "https://x.com/Fabuloustimsam/",
+    email: "your.fabulekore@gmail.com"
   },
-  resumeLink: "/your-resume.pdf",
-  journey: "I began my career in [field/year], where I discovered my passion for [specialty]. Since then, I've worked with [types of clients/companies], helping them [achievements]. My approach combines [your methodology] with [your strengths].",
-  philosophy: "I believe in [your professional philosophy]. My work is guided by principles of [your values], and I'm constantly seeking opportunities to [your goals].",
+  resumeLink: "/FabuleFrontenddevsResume.pdf",
+  journey: "I began my career in 2023 where i did a lot of self learning. Since then, I've worked with [types of clients/companies], helping them [achievements]. My approach combines [your methodology] with [your strengths].",
+  philosophy: "I believe in [your professional philosophy]. My work is guided by principles of [your values], and I'm constantly seeking opportunities to achieve the common goal to succeed.",
   education: [
     {
-      degree: "Your Degree",
-      field: "Your Field of Study",
-      school: "University Name",
-      year: "20XX - 20XX"
+      degree: "B.Sc.",
+      field: "Microbiology",
+      school: "Obafemi Awolowo University, ile-ife, Nigeria",
+      year: "2018 - 2023"
     }
   ],
   experience: [
     {
-      position: "Your Position",
-      company: "Company Name",
-      period: "Month Year - Present",
+      position: "Intern Frontend Developer",
+      company: "New Horizons",
+      period: "March, 2024 - January,2025",
       description: "Brief description of your responsibilities and achievements"
     },
     {
@@ -77,7 +77,12 @@ export default function AboutMe() {
         <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
           <div className="font-bold text-xl text-blue-600">
             <Link href="/">
-              <div>{personalInfo.name.split(' ')[0]}&apos;s Portfolio</div>
+            <div className="flex items-baseline">
+                      <span className="text-gray-800  font-extrabold text-2xl font-sans tracking-tight transform hover:scale-105 transition-transform duration-200">K</span>
+                      <span className="text-gray-700 font-bold text-2xl font-sans tracking-tight transform hover:scale-105 transition-transform duration-200">O</span>
+                      <span className="text-gray-800  font-bold text-2xl font-sans tracking-tight transform hover:scale-105 transition-transform duration-200">R</span>
+                      <span className="text-gray-700 font-extrabold text-2xl font-sans tracking-tight transform hover:scale-105 transition-transform duration-200">E</span>
+                    </div>
             </Link>
           </div>
           <div className="flex space-x-6">
@@ -98,7 +103,7 @@ export default function AboutMe() {
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20">
+      <section className=" bg-gray-700 text-white py-20">
         <div className="container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center">
           <div className="md:w-1/3 mb-8 md:mb-0 flex justify-center">
             <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
@@ -117,23 +122,25 @@ export default function AboutMe() {
             <p className="text-lg md:text-xl mb-6 opacity-90">{personalInfo.tagline}</p>
             <div className="flex space-x-4 justify-center md:justify-start">
               <Link href={personalInfo.social.linkedin} target="_blank" rel="noopener noreferrer">
-                <div className="bg-white bg-opacity-20 hover:bg-opacity-30 transition-all p-3 rounded-full">
+                <div className=" bg-opacity-20 hover:bg-opacity-30 transition-all p-3 rounded-full">
                   <FaLinkedin className="text-xl" />
                 </div>
               </Link>
               <Link href={personalInfo.social.github} target="_blank" rel="noopener noreferrer">
-                <div className="bg-white bg-opacity-20 hover:bg-opacity-30 transition-all p-3 rounded-full">
+                <div className=" bg-opacity-20 hover:bg-opacity-30 transition-all p-3 rounded-full">
                   <FaGithub className="text-xl" />
                 </div>
               </Link>
               <Link href={personalInfo.social.twitter} target="_blank" rel="noopener noreferrer">
-                <div className="bg-white bg-opacity-20 hover:bg-opacity-30 transition-all p-3 rounded-full">
-                  <FaTwitter className="text-xl" />
+                <div className=" bg-opacity-20 hover:bg-opacity-30 transition-all p-3 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 1200 1227" fill="currentColor">
+                    <path d="M857.8 0H1036L678.3 522.6L1095.2 1227H750.4L486.3 807.1L177.8 1227H0L379.3 661.1L0 0H355.7L599.3 390.3L857.8 0ZM796.1 1105.1H887.9L302.6 111.5H205.4L796.1 1105.1Z"/>
+                  </svg>
                 </div>
               </Link>
               <Link href={`mailto:${personalInfo.social.email}`}>
-                <div className="bg-white bg-opacity-20 hover:bg-opacity-30 transition-all p-3 rounded-full">
-                  <FaEnvelope className="text-xl" />
+                <div className=" bg-opacity-20 hover:bg-opacity-30 transition-all p-3 rounded-full">
+                <FaMailBulk className="text-xl" />
                 </div>
               </Link>
             </div>
@@ -141,7 +148,7 @@ export default function AboutMe() {
         </div>
       </section>
       
-      {/* Content Navigation */}
+    
       <section className="py-8 bg-white border-b">
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex overflow-x-auto space-x-6 justify-center">
@@ -347,8 +354,8 @@ export default function AboutMe() {
                 
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <ul className="list-disc list-inside space-y-2 text-gray-600 pl-4">
-                    <li>Certification Name, Issuing Organization (Year)</li>
-                    <li>Course Name, Platform (Year)</li>
+                    <li>Ceritification in Frontend Development,New Horizon (2024)</li>
+                    <li>Frontend Development, Platform (2024)</li>
                     <li>Workshop or Bootcamp, Provider (Year)</li>
                   </ul>
                 </div>

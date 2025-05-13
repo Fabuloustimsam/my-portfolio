@@ -75,13 +75,13 @@ useEffect(() => {
 
       <div className="min-h-screen dark:bg-gray-900   flex justify-center items-center p-2 sm:p-4 transition-colors duration-200">
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-full max-w-5xl p-4 sm:p-6 md:p-8 transition-colors duration-200">
-          {/* Header */}
+          
           <div className="flex flex-col sm:flex-row justify-between items-center mb-4 sm:mb-6 md:mb-10 gap-2 sm:gap-4">
             <div className="flex justify-between w-full sm:w-auto">
               <Link href="/" className="flex items-center">
                 <div className="flex items-center">
                   <div className="relative flex items-center bg-gradient-to-r from-gray-100 to-gray-50 dark:from-gray-800 dark:to-gray-900 px-3 py-1 rounded-lg shadow-md">
-                    {/* Logo Letters */}
+                    
                     <div className="flex items-baseline">
                       <span className="text-gray-800 dark:text-gray-200 font-bold text-2xl font-sans tracking-tight transform hover:scale-105 transition-transform duration-200">K</span>
                       <span className="text-red-500 font-extrabold text-2xl font-sans tracking-tight transform hover:scale-105 transition-transform duration-200">O</span>
@@ -93,7 +93,7 @@ useEffect(() => {
                 </div>
               </Link>
 
-              {/* Mobile Menu Button */}
+              
               <button 
                 className="sm:hidden text-gray-600 dark:text-gray-300"
                 onClick={toggleMobileMenu}
@@ -111,11 +111,11 @@ useEffect(() => {
               </button>
             </div>
 
-            {/* Email and Dark Mode Toggle - Hidden on Small, Visible on Medium+ */}
+            
             <div className="hidden sm:flex items-center text-gray-600 dark:text-gray-400">
               <Mail className="w-4 h-4 mr-2" />
               <span className="text-sm font-serif mr-4">Fabulekore@gmail.com</span>
-              {/* Dark Mode Toggle Button */}
+              
               <button
                 aria-label="Toggle dark mode"
                 className="p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors ml-4"
@@ -149,13 +149,13 @@ useEffect(() => {
               </button>
             </div>
 
-            {/* Mobile Email and Dark Mode Toggle - Visible on Small, Hidden on Medium+ */}
+            
             <div className="sm:hidden flex items-center justify-between w-full mt-2">
               <div className="flex items-center text-gray-600 dark:text-gray-400">
                 <Mail className="w-4 h-4 mr-2" />
                 <span className="text-xs font-serif">Fabulekore@gmail.com</span>
               </div>
-              {/* Dark Mode Toggle Button */}
+              
               <button
                 aria-label="Toggle dark mode"
                 className="p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
@@ -192,7 +192,7 @@ useEffect(() => {
             {/* Desktop Navigation */}
             <nav className="hidden sm:flex items-center space-x-4 md:space-x-6">
               <Link 
-              href="./components/" 
+              href="/components/aboutme" 
               className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
                 <FileText className="w-4 h-4 mr-1" />
                 <span className="text-sm">About me</span>
@@ -207,7 +207,7 @@ useEffect(() => {
                 <div className="text-sm">Resume</div>
               </a>
 
-              <Link href="/shelf" className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+              <Link href="/components/projectpage" className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
                 <BookOpen className="w-4 h-4 mr-1" />
                 <span className="text-sm">Projects</span>
               </Link>
@@ -218,7 +218,7 @@ useEffect(() => {
           {mobileMenuOpen && (
             <nav className="sm:hidden flex flex-col space-y-3 mb-4 bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
               <Link 
-                 href="./components/" 
+                 href="/components/aboutme" 
                 className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -237,7 +237,7 @@ useEffect(() => {
               </a>
 
               <Link 
-                href="/shelf" 
+                href="/components/projectpage" 
                 className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -288,7 +288,7 @@ useEffect(() => {
 
               <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-6 sm:mb-8">
               Hi, I&apos;m a Frontend Developer based in Lagos, Nigeria.
-              I specialize in building modern, high-performance websites and applications using frameworks like Next.js, React.js, JavaScript, Tailwind CSS, and Vanilla CSS. I bring rock-solid experience and a passion for creating clean, user-friendly interfaces. I love turning ideas into reality and am always eager to learn and grow in this ever-evolving field. Let&apos;s connect and create something amazing together!
+              I specialize in building modern, high-performance websites and applications using frameworks like <span className="font-bold underline">Next.js, React.js, JavaScript, Typescript, Tailwind CSS, and Vanilla CSS</span>. I bring rock-solid experience and a passion for creating clean, user-friendly interfaces. I love turning ideas into reality and am always eager to learn and grow in this ever-evolving field. Let&apos;s connect and create something amazing together!
 
 
               </p>
