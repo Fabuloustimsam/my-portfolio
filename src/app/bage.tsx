@@ -157,7 +157,7 @@ useEffect(() => {
           {mobileMenuOpen && (
             <nav className="sm:hidden flex flex-col space-y-3 mb-4 bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
               <Link 
-                 href="/components/aboutme" 
+               href="/components/aboutme"
                 className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -176,7 +176,7 @@ useEffect(() => {
               </a>
 
               <Link 
-                href="/components/projectpage" 
+                 href="/components/projectpage" 
                 className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
                 onClick={() => setMobileMenuOpen(false)}
               >
