@@ -1,10 +1,9 @@
-// app/projects/page.tsx
+
 "use client";
 
 import React from "react";
 import { useRouter } from "next/navigation";
-import { ArrowLeft } from "lucide-react"; // Optional: Install lucide-react if not installed
-import { MdDescription } from "react-icons/md";
+import { ArrowLeft } from "lucide-react"; // Importing ArrowLeft icon from lucide-react
 
 const projects = [
   {
