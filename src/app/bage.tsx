@@ -124,14 +124,12 @@ useEffect(() => {
             </nav>
           </div>
 
-          {/* Mobile Menu - Conditionally rendered */}
+          
           {mobileMenuOpen && (
             <nav className="sm:hidden flex flex-col space-y-3 mb-4 bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
               <Link 
-               href="/components/aboutme"
-                className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-                onClick={() => setMobileMenuOpen(false)}
-              >
+              href="/components/aboutme" 
+              className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
                 <FileText className="w-4 h-4 mr-1" />
                 <span className="text-sm">About me</span>
               </Link>
@@ -157,11 +155,11 @@ useEffect(() => {
             </nav>
           )}
 
-          {/* Main Content */}
+          
           <div className="flex flex-col-reverse md:flex-row justify-between">
-            {/* Left Side - Profile Info */}
+            
             <div className="w-full md:w-1/2 pr-0 md:pr-4 mt-6 md:mt-0">
-              {/* Speech Bubble */}
+              
               <div className="relative mb-2">
                 <div className="bg-gray-900 text-white font-serif font-bold px-3 py-2 rounded-lg inline-block">
                  Hi, I am....
@@ -169,7 +167,7 @@ useEffect(() => {
                 <div className="absolute w-4 h-4 bg-gray-900 transform rotate-45 right-12 -bottom-1"></div>
               </div>
 
-              {/* Name */}
+              
               <div className="transition-opacity mb-3 duration-700 ease-in-out">
                 <h1 className="text-5xl font-serif font-bold">
                   {showName ? "Fabule Samuel Akorede" : "A Frontend Developer"}
@@ -177,7 +175,7 @@ useEffect(() => {
               </div>
 
 
-              {/* Social Links */}
+              
               <div className="flex space-x-4 mb-4 sm:mb-6">
                 <Link href="https://www.linkedin.com/in/fabuloustimsam/" target="_blank" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
                   <Linkedin className="w-5 h-5" />
