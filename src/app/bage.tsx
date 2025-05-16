@@ -7,41 +7,12 @@ import Head from "next/head";
 import { Mail, FileText, User, BookOpen, Linkedin, Github } from "lucide-react";
 
 export default function PortfolioPage() {
-  const [darkMode, setDarkMode] = useState(false);
+  
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Check if the theme is already saved in localStorage or system preference on page load
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      document.documentElement.classList.add('dark');
-      setDarkMode(true);
-    } else if (savedTheme === 'light') {
-      document.documentElement.classList.remove('dark');
-      setDarkMode(false);
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.classList.add('dark');
-      setDarkMode(true);
-    } else {
-      document.documentElement.classList.remove('dark');
-      setDarkMode(false);
-    }
-  }, []);
-
-  // Toggle dark mode
-  const toggleDarkMode = () => {
-    if (!darkMode) {
-      // Switch to dark mode
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-      setDarkMode(true);
-    } else {
-      // Switch to light mode
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-      setDarkMode(false);
-    }
-  };
+ 
+ 
 
   // Toggle mobile menu
   const toggleMobileMenu = () => {
