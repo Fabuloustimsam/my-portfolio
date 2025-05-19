@@ -102,7 +102,7 @@ useEffect(() => {
             {/* Desktop Navigation */}
             <nav className="hidden sm:flex items-center space-x-4 md:space-x-6">
               <Link 
-              href="/components/aboutme" 
+              href="/components/aboutMe" 
               className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
                 <FileText className="w-4 h-4 mr-1" />
                 <span className="text-sm">About me</span>
@@ -128,7 +128,7 @@ useEffect(() => {
           {mobileMenuOpen && (
             <nav className="sm:hidden flex flex-col space-y-3 mb-4 bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
               <Link 
-              href="/components/aboutme" 
+              href="/components/aboutMe" 
               className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
                 <FileText className="w-4 h-4 mr-1" />
                 <span className="text-sm">About me</span>
