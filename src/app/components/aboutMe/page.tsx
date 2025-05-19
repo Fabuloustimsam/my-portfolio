@@ -410,7 +410,7 @@ export default function AboutMe() {
           </div>
           
           <div className="mt-6 text-center text-gray-400 text-sm">
-            <p>&copy; {new Date().getFullYear()} {personalInfo.name}. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} {personalInfo.name}</p>
           </div>
         </div>
       </footer>
