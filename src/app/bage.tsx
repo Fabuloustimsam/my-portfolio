@@ -108,7 +108,7 @@ useEffect(() => {
                 <span className="text-sm">About me</span>
               </Link>
               <a 
-                href="/FabuleFrontenddevsResume.pdf" 
+                href="/FabuleFrontenddevsResumeedit.pdf" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"

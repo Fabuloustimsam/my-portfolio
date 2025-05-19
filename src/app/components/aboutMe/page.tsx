@@ -21,7 +21,7 @@ const personalInfo = {
     twitter: "https://x.com/Fabuloustimsam/",
     email: "your.fabulekore@gmail.com"
   },
-  resumeLink: "/FabuleFrontenddevsResume.pdf",
+  resumeLink: "/FabuleFrontenddevsResumeedit.pdf",
   journey: "I began my career in 2023 where i did a lot of self learning. Since then, I've worked with different teams, helping them achieve their goals .",
   philosophy: "I believe in bringing your design ideas to life with functional codes and I'm constantly seeking opportunities to achieve the common goal to succeed.",
   education: [
@@ -47,9 +47,9 @@ const personalInfo = {
   ],
   testimonials: [
     {
-      quote: "Working with Samuel was an excellent experience. His Expertise has helped us achieve results.",
+      quote: "Working with Samuel has been an excellent experience. His expertise has helped us achieve results.",
       author: "Christian",
-      title: "Lead Developer, Company"
+      title: ""
     }
   ],
   projects: [

@@ -9,7 +9,7 @@ const projects = [
   {
     title: "Loopstudios",
     description: "Loopstudios is a responsive landing page I developed to showcase immersive VR experiences. Built with modern frontend tools, it emphasizes clean design, interactive visuals, and mobile-first responsiveness.",
-    link: "https://yourportfolio.com",
+    link: "https://studio-eosin-ten.vercel.app/",
   },
   {
     title: "KORE",  
