@@ -30,7 +30,7 @@ useEffect(() => {
 }, []);
 
 <h1 className="text-4xl font-bold">
-  {showName ? "Fabule Samuel Akorede" : "A Frontend Developer"}
+  {showName ? "Fabule Samuel Oluwatimileyin" : "A Frontend Developer"}
 </h1>
 
 
@@ -108,7 +108,7 @@ useEffect(() => {
                 <span className="text-sm">About me</span>
               </Link>
               <a 
-                href="/FabuleFrontenddevsResumeedit.pdf" 
+                href="/FabuleFrontenddeveloperResumee.pdf" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
@@ -134,7 +134,7 @@ useEffect(() => {
                 <span className="text-sm">About me</span>
               </Link>
               <a 
-                href="/FabuleFrontenddevsResume.pdf" 
+                href="/FabuleFrontenddeveloperResumee.pdf" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
@@ -170,7 +170,7 @@ useEffect(() => {
               
               <div className="transition-opacity mb-3 duration-700 ease-in-out">
                 <h1 className="text-5xl font-serif font-bold">
-                  {showName ? "Fabule Samuel Akorede" : "A Frontend Developer"}
+                  {showName ? "Fabule Samuel Oluwatimileyin" : "A Frontend Developer"}
                 </h1>
               </div>
 

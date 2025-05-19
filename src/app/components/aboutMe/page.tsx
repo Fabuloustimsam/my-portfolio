@@ -8,7 +8,7 @@ import { FaLinkedin, FaGithub, FaEnvelope, FaFileDownload} from 'react-icons/fa'
 
 // Replace with your information
 const personalInfo = {
-  name: "Fabule Samuel Akorede",
+  name: "Fabule Samuel Oluwatimileyin",
   title: "Frontend Developer",
   tagline: "Translating Design ideas into Functional Code.",
   description: "I'm a passionate Frontend Developer with 2 years of experience specializing in Frontend Development. I combine creativity and technical expertise to deliver exceptional results for my clients and teams.",
@@ -21,7 +21,7 @@ const personalInfo = {
     twitter: "https://x.com/Fabuloustimsam/",
     email: "your.fabulekore@gmail.com"
   },
-  resumeLink: "/FabuleFrontenddevsResumeedit.pdf",
+  resumeLink: "/FabuleFrontenddeveloperResumee.pdf",
   journey: "I began my career in 2023 where i did a lot of self learning. Since then, I've worked with different teams, helping them achieve their goals .",
   philosophy: "I believe in bringing your design ideas to life with functional codes and I'm constantly seeking opportunities to achieve the common goal to succeed.",
   education: [

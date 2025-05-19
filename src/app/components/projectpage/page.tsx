@@ -6,14 +6,15 @@ import { useRouter } from "next/navigation";
 import { ArrowLeft } from "lucide-react"; // Importing ArrowLeft icon from lucide-react
 
 const projects = [
-  {
-    title: "Loopstudios",
-    description: "Loopstudios is a responsive landing page I developed to showcase immersive VR experiences. Built with modern frontend tools, it emphasizes clean design, interactive visuals, and mobile-first responsiveness.",
-    link: "https://studio-eosin-ten.vercel.app/",
+  { 
+    title: "Brainiac",
+    description: "Brainiac Game is an interactive quiz platform I'm currently developing, featuring real-time scoring, multiplayer challenges, and a dynamic leaderboard to make learning engaging and competitive built with Next JS and Tailwind CSS.",
+    link: "https://brainiac-game.vercel.app/",
   },
+  
   {
     title: "KORE",  
-    description: "a twitter clone built with Next.js and Tailwind CSS.",
+    description: "a twitter clone built with HTML and Tailwind CSS. Sign in details are Fabulekore@gmail.com and password is Admin",
     link: "https://kore-six.vercel.app/",
   },
   {
@@ -21,18 +22,18 @@ const projects = [
     description: "iLearnovate is a free learning platform I built to provide accessible tech education, mentorship, and community support for aspiring developers in Africa.",
     link: "https://valueconnnect.vercel.app/",
   },
-  
-  { 
-    title: "Brainiac",
-    description: "Brainiac Game is an interactive quiz platform I'm currently developing, featuring real-time scoring, multiplayer challenges, and a dynamic leaderboard to make learning engaging and competitive.",
-    link: "https://brainiac-game.vercel.app/",
-  },
-  
   {
-    title: "Tonemarks",
-    description: "Tonemarks is an AI-powered platform I helped develop to enhance language accessibility through text-to-speech, speech-to-text, translation, and chatbot tools—focused on low-resource languages like Yoruba.",
-    link: "https://yoruba-ai-kappa.vercel.app/",
+    title: "Loopstudios",
+    description: "Loopstudios is a responsive landing page I developed to showcase immersive VR experiences. Built with modern frontend tools, it emphasizes clean design, interactive visuals, and mobile-first responsiveness.",
+    link: "https://studio-eosin-ten.vercel.app/",
   },
+  
+  
+  // {
+  //   title: "Tonemarks",
+  //   description: "Tonemarks is an AI-powered platform I helped develop to enhance language accessibility through text-to-speech, speech-to-text, translation, and chatbot tools—focused on low-resource languages like Yoruba.",
+  //   link: "https://yoruba-ai-kappa.vercel.app/",
+  // },
   
   {
     title: "Youtube-clone",
