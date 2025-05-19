@@ -202,6 +202,7 @@ useEffect(() => {
               </p>
 
               {/* CTA Button */}
+              <div className="w-fit">
               <Link href="/components/Contact">
                 <div className="bg-red-400 hover:bg-red-500 text-white rounded-full flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 transition-colors">
                   <div className="text-center">
@@ -210,6 +211,8 @@ useEffect(() => {
                   </div>
                 </div>
               </Link>
+              </div>
+              
             </div>
 
             {/* Right Side - Avatar */}
