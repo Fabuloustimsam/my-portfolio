@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope, FaFileDownload, FaMailBulk } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaFileDownload} from 'react-icons/fa';
 
 // Replace with your information
 const personalInfo = {
@@ -14,7 +14,7 @@ const personalInfo = {
   description: "I'm a passionate Frontend Developer with 2 years of experience specializing in Frontend Development. I combine creativity and technical expertise to deliver exceptional results for my clients and teams.",
   photo: "/bortimagereal.png",
   skills: ["JavaScript", "React", "Next.js", "Tailwind CSS", "Typescript", "Node.js", "Git"],
-  interests: ["Video editing", "Hiking",  "Football", "Reading", "Playing Guitar", "Travel"],
+  interests: ["Video editing", "Hiking",  "Football", "Music", "Movies/Series",  "Travel"],
   social: {
     linkedin: "https://www.linkedin.com/in/fabuloustimsam/",
     github: "https://github.com/Fabuloustimsam",
@@ -22,8 +22,8 @@ const personalInfo = {
     email: "your.fabulekore@gmail.com"
   },
   resumeLink: "/FabuleFrontenddevsResume.pdf",
-  journey: "I began my career in 2023 where i did a lot of self learning. Since then, I've worked with [types of clients/companies], helping them [achievements]. My approach combines [your methodology] with [your strengths].",
-  philosophy: "I believe in [your professional philosophy]. My work is guided by principles of [your values], and I'm constantly seeking opportunities to achieve the common goal to succeed.",
+  journey: "I began my career in 2023 where i did a lot of self learning. Since then, I've worked with different teams, helping them achieve their goals .",
+  philosophy: "I believe in bringing your design ideas to life with functional codes and I'm constantly seeking opportunities to achieve the common goal to succeed.",
   education: [
     {
       degree: "B.Sc.",
@@ -37,20 +37,19 @@ const personalInfo = {
       position: "Intern Frontend Developer",
       company: "New Horizons",
       period: "March, 2024 - January,2025",
-      description: "Brief description of your responsibilities and achievements"
     },
     {
-      position: "Previous Position",
-      company: "Previous Company",
-      period: "Month Year - Month Year",
-      description: "Brief description of your responsibilities and achievements"
+      position: "Frontend Developer",
+      company: "Brainiac Game Project",
+      period: "May 2025 -  Present",
+    
     }
   ],
   testimonials: [
     {
-      quote: "Working with [Your Name] was an excellent experience. Their expertise in [skill] helped us achieve [result].",
-      author: "Client/Colleague Name",
-      title: "Position, Company"
+      quote: "Working with Samuel was an excellent experience. His Expertise has helped us achieve results.",
+      author: "Christian",
+      title: "Lead Developer, Company"
     }
   ],
   projects: [
@@ -77,12 +76,16 @@ export default function AboutMe() {
         <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
           <div className="font-bold text-xl text-blue-600">
             <Link href="/">
-            <div className="flex items-baseline">
-                      <span className="text-gray-800  font-extrabold text-2xl font-sans tracking-tight transform hover:scale-105 transition-transform duration-200">K</span>
-                      <span className="text-gray-700 font-bold text-2xl font-sans tracking-tight transform hover:scale-105 transition-transform duration-200">O</span>
-                      <span className="text-gray-800  font-bold text-2xl font-sans tracking-tight transform hover:scale-105 transition-transform duration-200">R</span>
-                      <span className="text-gray-700 font-extrabold text-2xl font-sans tracking-tight transform hover:scale-105 transition-transform duration-200">E</span>
+            <div className="relative flex items-center bg-gradient-to-r from-gray-100 to-gray-50 dark:from-gray-800 dark:to-gray-900 px-3 py-1 rounded-lg shadow-md">
+                    
+                    <div className="flex items-baseline">
+                      <span className="text-gray-800 dark:text-gray-200 font-bold text-2xl font-sans tracking-tight transform hover:scale-105 transition-transform duration-200">K</span>
+                      <span className="text-red-500 font-extrabold text-2xl font-sans tracking-tight transform hover:scale-105 transition-transform duration-200">O</span>
+                      <span className="text-gray-800 dark:text-gray-200 font-bold text-2xl font-sans tracking-tight transform hover:scale-105 transition-transform duration-200">R</span>
+                      <span className="text-red-500 font-extrabold text-2xl font-sans tracking-tight transform hover:scale-105 transition-transform duration-200">E</span>
                     </div>
+                  
+                  </div>
             </Link>
           </div>
           <div className="flex space-x-6">
@@ -92,10 +95,10 @@ export default function AboutMe() {
             <Link href="/about">
               <div className="text-blue-600 font-medium">About Me</div>
             </Link>
-            <Link href="/works">
+            <Link href="/components/projectpage">
               <div className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Works</div>
             </Link>
-            <Link href="/contact">
+            <Link href="/components/Contact">
               <div className="text-gray-700 hover:text-blue-600 transition-colors">Contact</div>
             </Link>
           </div>
@@ -140,7 +143,7 @@ export default function AboutMe() {
               </Link>
               <Link href={`mailto:${personalInfo.social.email}`}>
                 <div className=" bg-opacity-20 hover:bg-opacity-30 transition-all p-3 rounded-full">
-                <FaMailBulk className="text-xl" />
+                <FaEnvelope className="text-xl" />
                 </div>
               </Link>
             </div>
@@ -265,24 +268,16 @@ export default function AboutMe() {
                     </div>
                   </div>
                   <div className="bg-gray-50 p-6 rounded-lg">
-                    <h4 className="font-medium text-lg mb-3 text-gray-800">Personal Projects</h4>
+                    
                     <p className="text-gray-600">
-                      When I&apos;m not working, I enjoy [describe your personal projects or activities]. 
-                      These pursuits help me stay creative and bring fresh perspectives to my professional work.
+                      When I&apos;m not working, I enjoy exploring the latest in web design, building creative side projects, and diving into music especially sad songs for their unique vibe. These interests keep my creativity sharp and help me bring fresh, human-centered perspectives to my work.
+
                     </p>
                   </div>
                 </div>
               </div>
               
-              <div className="mb-6">
-                <h3 className="text-xl font-semibold mb-4 text-gray-800">Fun Facts</h3>
-                <ul className="list-disc list-inside space-y-2 text-gray-600 pl-4">
-                  <li>Fun fact about yourself</li>
-                  <li>Another interesting tidbit</li>
-                  <li>Something unexpected about you</li>
-                  <li>A hidden talent or quirky habit</li>
-                </ul>
-              </div>
+            
             </div>
           )}
           
@@ -300,31 +295,12 @@ export default function AboutMe() {
                       <span className="w-1.5 h-1.5 rounded-full bg-gray-400"></span>
                       <span>{job.period}</span>
                     </div>
-                    <p className="text-gray-600">{job.description}</p>
+                    <p className="text-gray-600"></p>
                   </div>
                 ))}
               </div>
               
-              <div className="mt-10">
-                <h3 className="text-xl font-semibold mb-4 text-gray-800">Featured Projects</h3>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {personalInfo.projects.map((project, index) => (
-                    <div key={index} className="bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow">
-                      <h4 className="font-bold text-lg mb-2 text-gray-800">{project.title}</h4>
-                      <p className="text-gray-600 mb-4">{project.description}</p>
-                      <Link href={project.link}>
-                        <div className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
-                          View Project
-                          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-                          </svg>
-                        </div>
-                      </Link>
-                    </div>
-                  ))}
-                </div>
-              </div>
+             
             </div>
           )}
           
@@ -354,9 +330,8 @@ export default function AboutMe() {
                 
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <ul className="list-disc list-inside space-y-2 text-gray-600 pl-4">
-                    <li>Ceritification in Frontend Development,New Horizon (2024)</li>
-                    <li>Frontend Development, Platform (2024)</li>
-                    <li>Workshop or Bootcamp, Provider (Year)</li>
+                    <li>Ceritification in Frontend Development,</li>
+                    <li> New Horizons (2024)</li>
                   </ul>
                 </div>
               </div>
@@ -388,7 +363,7 @@ export default function AboutMe() {
                 <p className="text-blue-700 mb-4">
                   Interested in collaborating or learning more about my work? I&apos;d love to hear from you!
                 </p>
-                <Link href={`mailto:${personalInfo.social.email}`}>
+                <Link href="/components/Contact">
                   <div className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg inline-block transition-colors">
                     Get in Touch
                   </div>
@@ -421,7 +396,9 @@ export default function AboutMe() {
               </Link>
               <Link href={personalInfo.social.twitter} target="_blank" rel="noopener noreferrer">
                 <div className="hover:text-blue-400 transition-colors">
-                  <FaTwitter className="text-xl" />
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 1200 1227" fill="currentColor">
+                    <path d="M857.8 0H1036L678.3 522.6L1095.2 1227H750.4L486.3 807.1L177.8 1227H0L379.3 661.1L0 0H355.7L599.3 390.3L857.8 0ZM796.1 1105.1H887.9L302.6 111.5H205.4L796.1 1105.1Z"/>
+                  </svg>
                 </div>
               </Link>
               <Link href={`mailto:${personalInfo.social.email}`}>
