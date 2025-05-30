@@ -30,7 +30,7 @@ useEffect(() => {
 }, []);
 
 <h1 className="text-4xl font-bold">
-  {showName ? "Fabule Samuel Oluwatimileyin" : "A Frontend Developer"}
+  {showName ? "Fabule Samuel timileyin" : "A Frontend Developer"}
 </h1>
 
 
@@ -170,7 +170,7 @@ useEffect(() => {
               
               <div className="transition-opacity mb-3 duration-700 ease-in-out">
                 <h1 className="text-5xl font-serif font-bold">
-                  {showName ? "Fabule Samuel Oluwatimileyin" : "A Frontend Developer"}
+                  {showName ? "Fabule Samuel Timileyin" : "A Frontend Developer"}
                 </h1>
               </div>
 
